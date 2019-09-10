@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    
+      var frase = prompt("Escribe una frase");
+      var reves= ("");
+      function palin(frase){
+          frase=frase.toLowerCase().replace(/ /g,"");
+          
+          reves=frase.split("").reverse().toString();
+          
+          for (var i=0; i<((reves.length)-1); i++){
+            reves=reves.replace(",","");
+            
+          };
+          if (frase==reves){
+            final="palindromo";
+          }
+          else{
+            final="no palindomo";
+          } 
+            
+          document.write(final);
+      }
+      
+      palin(frase);
+    </script>
+  </head>
+  <body>
+  </body>
+</html> 
